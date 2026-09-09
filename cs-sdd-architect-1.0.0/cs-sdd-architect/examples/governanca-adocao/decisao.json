@@ -1,0 +1,13 @@
+{
+  "id": "AD-FIC01",
+  "fictional": true,
+  "responsible": "Aprovador fictício da fixture",
+  "date": "2026-09-08",
+  "evidence": "aprovacao-ficticia.md",
+  "impact": [
+    "REQ-01 e teste de registro da revisão"
+  ],
+  "decision": "adotar revisão disponível somente neste exercício",
+  "old_baseline": "baseline-anterior.json",
+  "new_baseline": "baseline-adotada.json"
+}

@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "name": "empresa-processos.md",
+      "origin": "fixture://empresa-ficticia/empresa-processos.md",
+      "version": "1.1-ficticia",
+      "sha256": "ae2f2276ae0c089e38c211e11fe1df48e1556e48684683465efab25dbcb1d913",
+      "fallback": false,
+      "status": "aprovado"
+    },
+    {
+      "name": "empresa-desenvolvimento.md",
+      "origin": "fixture://empresa-ficticia/empresa-desenvolvimento.md",
+      "version": "1.0-ficticia",
+      "sha256": "bc1c7752b9f3a8cf59c41de4fd49bf21f54b0a1c14db0a85a23d134a75157bf7",
+      "fallback": false,
+      "status": "aprovado"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "rubric_version": "ipc-1.0",
+  "ipc_raw": 45.0,
+  "ipc_display": 45,
+  "dimensions": {
+    "produto": 50.0,
+    "escopo": 25.0,
+    "governanca": 50.0,
+    "engenharia": 50.0,
+    "verificacao": 50.0,
+    "seguranca_operacao": 50.0
+  },
+  "applicable_weight": 100.0,
+  "band": "contexto_insuficiente",
+  "critical_blockers": [
+    "Versões/contratos críticos e governança real pendentes",
+    "Autorização e aceite de revisão do operador pendentes"
+  ],
+  "approval_blocked": true,
+  "approval": "nao_concedida",
+  "meaning": "Completude contextual; não é probabilidade de acerto."
+}

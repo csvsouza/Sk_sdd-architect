@@ -1,0 +1,11 @@
+{
+  "spec.md": "requisitos, abordagem, validações e registros compactos",
+  "projeto-regras.md": "base adotada e regras locais",
+  "visao-geral-projeto.md": "entrada documental obrigatória",
+  "architecture.md": "fronteiras entre componentes",
+  "tasks.md": "dependências entre componentes",
+  "testing.md": "verificação entre componentes",
+  "database.md": "persistência/transações afetadas",
+  "integrations.md": "contratos entre sistemas",
+  "operations.md": "execução recorrente e recuperação"
+}

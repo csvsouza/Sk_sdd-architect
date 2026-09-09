@@ -1,0 +1,4 @@
+interface:
+  display_name: "CS SDD Architect"
+  short_description: "Especificações SDD, governança e prontidão contextual"
+  default_prompt: "Use $cs-sdd-architect para especificar este projeto e manter suas fontes, visão geral e diagramas consistentes."

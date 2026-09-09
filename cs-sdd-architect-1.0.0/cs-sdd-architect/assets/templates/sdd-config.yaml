@@ -1,0 +1,5 @@
+# Fonte central acessível; caminho absoluto ou relativo a este arquivo.
+corporate_root: null
+# Cache só será usado se coincidir com hash previamente adotado.
+corporate_cache: null
+model_catalog: null

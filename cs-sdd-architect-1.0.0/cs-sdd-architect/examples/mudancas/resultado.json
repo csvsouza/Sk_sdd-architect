@@ -1,0 +1,14 @@
+{
+  "check": {
+    "errors": [],
+    "sync": "bases_conferidas_revisao_semantica_necessaria",
+    "mermaid": "presença verificada; sintaxe/renderização dependem de ferramenta externa"
+  },
+  "assertions": [
+    "fontes afetadas e visão geral 1.1 atualizadas",
+    "fluxograma e mapa mental alterados",
+    "IPC 50 -> 45; regra nova ausente mantém denominador",
+    "G2 invalidada e G1 preservada na fixture"
+  ],
+  "scope": "fixture documental; nenhum sistema de negócio executado"
+}

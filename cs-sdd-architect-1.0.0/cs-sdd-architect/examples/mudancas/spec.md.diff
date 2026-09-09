@@ -1,0 +1,9 @@
+--- antes/spec.md
++++ depois/spec.md
+@@ -40,3 +40,6 @@
+ 
+ ## Erros e recuperação
+ Operador trata envio incerto com consulta autorizada ao destino; não reenvia até conclusão. Implantação e suporte pendentes; recuperação precisa respeitar estado remoto e local.
++
++## CHG-01 — revisão 1.1
++Solicitação fictícia confirmada nesta avaliação: após aprovação do gestor, operador deve revisar a solicitação antes do envio. REQ-02: revisão registrada é pré-condição para Python enviar. Aceite proposto: aprovação sem revisão não envia; revisão negativa retorna ao gestor. T-02 depende de T-01 e altera somente transição de envio e evidências correspondentes. Teste negativo adicional obrigatório; nenhum código foi implementado.

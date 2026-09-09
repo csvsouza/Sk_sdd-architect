@@ -1,0 +1,28 @@
+# Templates sob demanda
+
+Copie governança para configuração inicial, preencha sem exemplos fictícios e mantenha fonte central versionada. Para documentos SDD, use apenas os selecionados em [artefatos](../../references/artefatos.md); remova orientações substituídas por conteúdo. Arrays vazios/nulos de templates não comprovam prontidão.
+
+- [empresa-processos.md](empresa-processos.md)
+- [empresa-desenvolvimento.md](empresa-desenvolvimento.md)
+- [projeto-regras.md](projeto-regras.md)
+- [sdd-config.yaml](sdd-config.yaml)
+- [model-catalog.json](model-catalog.json)
+- [readiness.json](readiness.json)
+- [traceability.json](traceability.json)
+- [visao-geral-projeto.md](visao-geral-projeto.md)
+- [spec.md](spec.md)
+- [product.md](product.md)
+- [development.md](development.md)
+- [architecture.md](architecture.md)
+- [database.md](database.md)
+- [integrations.md](integrations.md)
+- [security.md](security.md)
+- [testing.md](testing.md)
+- [operations.md](operations.md)
+- [tasks.md](tasks.md)
+- [decision.md](decision.md)
+- [approvals.md](approvals.md)
+- [readiness.md](readiness.md)
+- [execution-strategy.md](execution-strategy.md)
+- [rastreabilidade.md](rastreabilidade.md)
+- [mudancas.md](mudancas.md)

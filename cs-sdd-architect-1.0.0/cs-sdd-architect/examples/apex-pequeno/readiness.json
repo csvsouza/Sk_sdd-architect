@@ -1,0 +1,146 @@
+{
+  "rubric_version": "ipc-1.0",
+  "dimensions": [
+    {
+      "id": "produto",
+      "weight": 15,
+      "items": [
+        {
+          "id": "produto-1",
+          "label": "Problema e públicos identificados",
+          "applicable": true,
+          "score": 0.5,
+          "source": "spec.md",
+          "justification": null
+        },
+        {
+          "id": "produto-2",
+          "label": "Valor e métricas com método/fonte",
+          "applicable": true,
+          "score": 0.5,
+          "source": "spec.md",
+          "justification": null
+        }
+      ]
+    },
+    {
+      "id": "escopo",
+      "weight": 20,
+      "items": [
+        {
+          "id": "escopo-1",
+          "label": "MVP, prioridades, jornadas e exclusões",
+          "applicable": true,
+          "score": 0.5,
+          "source": "spec.md",
+          "justification": null
+        },
+        {
+          "id": "escopo-2",
+          "label": "Regras de negócio e exceções claras",
+          "applicable": true,
+          "score": 0.5,
+          "source": "spec.md",
+          "justification": null
+        }
+      ]
+    },
+    {
+      "id": "governanca",
+      "weight": 20,
+      "items": [
+        {
+          "id": "governanca-1",
+          "label": "Duas bases corporativas versionadas e regras locais",
+          "applicable": true,
+          "score": 0.5,
+          "source": "spec.md",
+          "justification": null
+        },
+        {
+          "id": "governanca-2",
+          "label": "Conflitos/exceções e responsáveis definidos",
+          "applicable": true,
+          "score": 0.5,
+          "source": "spec.md",
+          "justification": null
+        }
+      ]
+    },
+    {
+      "id": "engenharia",
+      "weight": 15,
+      "items": [
+        {
+          "id": "engenharia-1",
+          "label": "Viabilidade, alternativas e fronteiras",
+          "applicable": true,
+          "score": 0.5,
+          "source": "spec.md",
+          "justification": null
+        },
+        {
+          "id": "engenharia-2",
+          "label": "Dados, integrações e stack suficientes",
+          "applicable": true,
+          "score": 0.5,
+          "source": "spec.md",
+          "justification": null
+        }
+      ]
+    },
+    {
+      "id": "verificacao",
+      "weight": 20,
+      "items": [
+        {
+          "id": "verificacao-1",
+          "label": "Aceites verificáveis e cenários negativos",
+          "applicable": true,
+          "score": 0.5,
+          "source": "spec.md",
+          "justification": null
+        },
+        {
+          "id": "verificacao-2",
+          "label": "Rastreabilidade e estratégia de testes",
+          "applicable": true,
+          "score": 0.5,
+          "source": "spec.md",
+          "justification": null
+        }
+      ]
+    },
+    {
+      "id": "seguranca_operacao",
+      "weight": 10,
+      "items": [
+        {
+          "id": "seguranca_operacao-1",
+          "label": "Autorização, segredos e falhas relevantes",
+          "applicable": true,
+          "score": 0.5,
+          "source": "spec.md",
+          "justification": null
+        },
+        {
+          "id": "seguranca_operacao-2",
+          "label": "Operação, retomada e recuperação aplicáveis",
+          "applicable": true,
+          "score": 0.5,
+          "source": "spec.md",
+          "justification": null
+        }
+      ]
+    }
+  ],
+  "critical_blockers": [
+    "Versões/contratos críticos e governança real pendentes"
+  ],
+  "hypotheses": [],
+  "priority_actions": [],
+  "stage": null,
+  "approval_status": "nao_submetido",
+  "previous_revision": null,
+  "change_reason": null
+}

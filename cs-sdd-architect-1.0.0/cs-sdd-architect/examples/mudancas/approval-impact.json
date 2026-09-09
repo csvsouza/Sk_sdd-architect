@@ -1,0 +1,35 @@
+{
+  "fictional": true,
+  "before": [
+    {
+      "id": "APR-01",
+      "stage": "G1",
+      "status": "aprovado",
+      "version": "1.0",
+      "evidence": "fixture de aprovação de contexto"
+    },
+    {
+      "id": "APR-02",
+      "stage": "G2",
+      "status": "aprovado",
+      "version": "1.0",
+      "evidence": "fixture de aprovação de fluxo"
+    }
+  ],
+  "after": [
+    {
+      "id": "APR-01",
+      "stage": "G1",
+      "status": "aprovado",
+      "version": "1.0",
+      "reason": "problema/público não alterados"
+    },
+    {
+      "id": "APR-02",
+      "stage": "G2",
+      "status": "invalidado_por_mudanca",
+      "version": "1.0",
+      "reason": "REQ-02 modifica critério aprovado; nova aprovação não atribuída"
+    }
+  ]
+}
