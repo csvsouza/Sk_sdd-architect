@@ -6,6 +6,7 @@
       "version": "1.0-ficticia",
       "sha256": "5e542b56fc4c7a305dc129737bbe17a724bf8ab16e4f696a0b41b1467a575366",
       "fallback": false,
+      "embedded": false,
       "status": "aprovado"
     },
     {
@@ -14,6 +15,7 @@
       "version": "1.0-ficticia",
       "sha256": "bc1c7752b9f3a8cf59c41de4fd49bf21f54b0a1c14db0a85a23d134a75157bf7",
       "fallback": false,
+      "embedded": false,
       "status": "aprovado"
     }
   ]

@@ -1,6 +1,6 @@
 # Perfis extensíveis
 
-Carregue somente tecnologias confirmadas: [Oracle Database e PL/SQL](oracle-plsql.md), [APEX](apex.md), [Python](python.md). APEX não autoriza presumir versão de Oracle ou ORDS. PL/SQL herda a versão efetiva do banco, a confirmar.
+Carregue somente tecnologias confirmadas: [Oracle Database e PL/SQL](oracle-plsql.md), [APEX](apex.md), [Python](python.md). Em APEX/PLSQL da CS Compusoftware, o perfil APEX direciona também ao guideline corporativo incorporado. APEX não autoriza presumir versão de Oracle ou ORDS. PL/SQL herda a versão efetiva do banco, a confirmar.
 
 Novo perfil: criar referência com gatilho, fontes a consultar por versão, perguntas específicas, contratos/erros, riscos, critérios verificáveis e limites; adicionar link aqui e caso de avaliação. O núcleo permanece independente. Sem perfil, assuma cobertura geral de engenharia e explicite necessidade de especialista; não prometa equivalência.
 

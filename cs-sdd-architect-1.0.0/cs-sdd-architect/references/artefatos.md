@@ -1,11 +1,12 @@
 # Seleção proporcional
 
-Sempre produza `spec.md`, `projeto-regras.md` e `visao-geral-projeto.md`. Em projeto pequeno, `spec.md` pode conter produto, desenvolvimento, tarefas, testes, rastreabilidade, aprovações, IPC e estratégia. Os dois documentos corporativos continuam na fonte central ou em snapshots identificados, sem duplicação normativa.
+Sempre produza `spec.md`, `projeto-regras.md` e `visao-geral-projeto.md`. Em projeto pequeno, `spec.md` pode conter produto, desenvolvimento, tarefas, testes, rastreabilidade, aprovações, IPC e estratégia. Os dois documentos corporativos permanecem canônicos dentro da skill; o projeto referencia versão e hash, sem copiá-los nem duplicar o texto normativo.
 
 Selecione por conteúdo real; registre no spec arquivos escolhidos/dispensados e justificativa. `select` oferece sugestão determinística, ajustável pelo agente com justificativa.
 
 | Template | Quando separar |
 | --- | --- |
+| apex-page-sdd.md | Página ou fluxo Oracle APEX com componentes, segurança e PL/SQL específicos |
 | product.md | Jornadas, stakeholders ou backlog extensos |
 | development.md | Organização do código e convenções próprias extensas |
 | architecture.md | Múltiplos componentes ou trade-offs relevantes |

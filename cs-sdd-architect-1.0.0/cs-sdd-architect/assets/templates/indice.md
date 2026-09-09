@@ -1,15 +1,16 @@
 # Templates sob demanda
 
-Copie governança para configuração inicial, preencha sem exemplos fictícios e mantenha fonte central versionada. Para documentos SDD, use apenas os selecionados em [artefatos](../../references/artefatos.md); remova orientações substituídas por conteúdo. Arrays vazios/nulos de templates não comprovam prontidão.
+As duas baselines corporativas abaixo pertencem à skill e não devem ser copiadas para o projeto. Para documentos SDD, use apenas os templates selecionados em [artefatos](../../references/artefatos.md); remova orientações substituídas por conteúdo. Arrays vazios/nulos de templates não comprovam prontidão.
 
-- [empresa-processos.md](empresa-processos.md)
-- [empresa-desenvolvimento.md](empresa-desenvolvimento.md)
+- Baseline corporativa: [empresa-processos.md](empresa-processos.md)
+- Baseline corporativa: [empresa-desenvolvimento.md](empresa-desenvolvimento.md)
 - [projeto-regras.md](projeto-regras.md)
 - [sdd-config.yaml](sdd-config.yaml)
 - [model-catalog.json](model-catalog.json)
 - [readiness.json](readiness.json)
 - [traceability.json](traceability.json)
 - [visao-geral-projeto.md](visao-geral-projeto.md)
+- [apex-page-sdd.md](apex-page-sdd.md)
 - [spec.md](spec.md)
 - [product.md](product.md)
 - [development.md](development.md)

@@ -28,13 +28,17 @@ python -m venv .venv
 
 Validado aqui com Python 3.14.6/PyYAML 6.0.3 em Windows. Outras versões/plataformas não foram executadas nesta avaliação. Não copie a .venv para a instalação da skill.
 
+### Projetos CS APEX e PL/SQL
+
+Para uma página ou módulo APEX da CS Compusoftware, basta fornecer o contexto humano do projeto e indicar os arquivos existentes. A skill aplica as regras `CSAPEX-*` da baseline embutida [empresa-desenvolvimento.md](assets/templates/empresa-desenvolvimento.md), usa o [índice do guideline CS APEX](references/cs-apex/indice.md) para localizar detalhes e consulta o snapshot apenas nos capítulos relacionados aos componentes necessários. O template [apex-page-sdd.md](assets/templates/apex-page-sdd.md) organiza identidade da página, alçada, componentes, dados/PLSQL, critérios de aceite e release. A versão do APEX, os objetos do schema e a disponibilidade de componentes corporativos ainda precisam ser confirmados no ambiente do projeto.
+
 ## Configurar padrões e compartilhar
 
-1. O mantenedor copia `assets/templates/empresa-processos.md` e `empresa-desenvolvimento.md` para uma fonte central versionada escolhida pela empresa. Preenche conteúdo real, versão, responsável, status, histórico e evidência de aprovação; IDs estáveis para regras, escopo/classificação, aceite/evidência e política de exceção.
-2. Registre aprovação e publicação de uma revisão identificável. O mecanismo pode ser repositório, pasta versionada ou exportação controlada; não há serviço de sincronização implementado. Disponibilize somente a quem pode ler o conteúdo e não grave segredos nos arquivos.
-3. Em cada projeto, copie `sdd-config.yaml`, configure corporate_root para essa fonte acessível e peça à skill que leia os dois arquivos. Configuração e baselines são do projeto, não da memória de conversa. Preencha projeto-regras.md com regras locais ou declaração explícita de ausência.
-4. Registre origem/revisão/hash em baseline.json e nas fontes da visão geral. Para consumo portátil, mantenha snapshots autorizados em regras/ com origem preservada. Os exemplos mostram dois projetos usando a mesma fonte central fictícia.
-5. Nova versão corporativa: compare impacto antes de adotar explicitamente em projeto existente. Preserve base/histórico e revisão anterior; atualize aprovações afetadas. Fonte indisponível: fallback apenas com hash adotado correspondente e limitação registrada. Ausência/incompletude impede conformidade, mas permite rascunho.
+1. `assets/templates/empresa-processos.md` e `assets/templates/empresa-desenvolvimento.md` são as baselines corporativas canônicas da skill. O mantenedor altera e versiona esses arquivos uma única vez; eles não são copiados nem recriados dentro de cada projeto.
+2. Em cada projeto, use `sdd-config.yaml` com `corporate_root: null`. A skill lê automaticamente as duas baselines embutidas e registra origem, versão e hash em `baseline.json` e na visão geral.
+3. `projeto-regras.md` contém somente regras locais, exceções e diferenças do projeto, ou a declaração explícita de que não existem regras locais. Não replique nele o texto corporativo.
+4. Quando a empresa fornecer deliberadamente uma revisão corporativa substituta, completa e versionada, `corporate_root` pode apontar para essa pasta. Compare hashes, registre a adoção e preserve a revisão anterior; cache só é válido quando coincide com o hash adotado.
+5. Preencha responsável, status, histórico e evidência de aprovação nas baselines canônicas. Enquanto esses dados estiverem pendentes, a skill pode produzir rascunhos aderentes às regras fornecidas, mas não declarar conformidade corporativa formal.
 
 O catálogo de modelos começa vazio. Para cada entrada, registrar id exato, supported_efforts (lista), required_capabilities (lista), context_limit (número/null), tools (lista), latency_evidence (string/null), source (URL), verified_at (data), environment_availability (confirmada/pendente), billing_regime (API/assinatura), prices (objeto por categoria/moeda/unidade ou null) e restrictions (lista). Confirmar fontes oficiais no momento da recomendação; não copiar hipóteses de modelos como capacidades verificadas.
 
@@ -59,4 +63,4 @@ Entregue ao consumidor a visão geral e fontes relativas acessíveis, contrato 1
 
 ## Pendências da empresa
 
-Conteúdo e vigência dos dois padrões; fonte central e acesso; responsáveis/processo de aprovação e exceção; versões/restrições da stack; exemplos reais de package/APEX/automação; catálogo/orçamento e distribuição na equipe. Sem essas informações, nenhuma conformidade corporativa, validação de negócio ou economia monetária foi demonstrada.
+Responsáveis, processo de aprovação e exceção e evidência de vigência das duas baselines; versões/restrições dos ambientes; exemplos reais de package/APEX/automação; catálogo/orçamento e distribuição da skill na equipe. Sem essas informações, nenhuma conformidade corporativa formal, validação de negócio ou economia monetária foi demonstrada.

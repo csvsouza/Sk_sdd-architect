@@ -1,12 +1,14 @@
 # Herança corporativa
 
-Configure `sdd-config.yaml` a partir do template. `corporate_root` aponta para uma pasta central versionada acessível (checkout, compartilhamento ou exportação autorizada). Caminhos relativos resolvem a partir da configuração. O utilitário não acessa rede nem faz checkout. O mantenedor publica revisões aprovadas; hash identifica bytes, não comprova aprovação ou vigência.
+As fontes corporativas canônicas desta skill são `assets/templates/empresa-processos.md` e `assets/templates/empresa-desenvolvimento.md`. Leia-as diretamente em toda execução e não gere, copie nem mantenha duplicatas delas dentro dos projetos. O projeto registra versão, origem e hash em `baseline.json`, `projeto-regras.md` e na visão geral. `corporate_root: null` usa automaticamente essas fontes incorporadas.
 
-Leia integralmente `empresa-processos.md` e `empresa-desenvolvimento.md`, inclusive metadados, histórico e regras aplicáveis, antes de filtrar contexto para tarefas. Confirme com fonte de aprovação a revisão vigente em projetos novos. Leia `projeto-regras.md` existente; só pergunte o que falta. Registre adoção em `baseline.json` e em regras locais; snapshot em `regras/` é opcional. Mantenha links portáveis para snapshots autorizados quando houver consumidor externo à pasta central.
+`corporate_root` só deve apontar para outra pasta quando o usuário fornecer explicitamente uma revisão corporativa substituta, completa e versionada. Caminhos relativos resolvem a partir de `sdd-config.yaml`. O utilitário não acessa rede nem faz checkout. Uma substituição não altera silenciosamente a baseline incorporada; compare hashes, registre a adoção e preserve a revisão anterior.
+
+Leia integralmente as duas baselines, inclusive metadados, histórico e regras aplicáveis, antes de filtrar contexto para tarefas. Confirme com fonte de aprovação a revisão vigente quando o projeto precisar declarar conformidade. Leia `projeto-regras.md` existente; só pergunte o que falta. Não replique o texto normativo: registre a adoção por referência, versão e hash. Snapshot externo só é aceitável quando um consumidor não puder acessar a skill e deve preservar a origem.
 
 Base normativa: obrigações corporativas; depois detalhes locais compatíveis/mais rigorosos; recomendações adaptáveis com justificativa; por fim sugestões explicitamente propostas. Os dois documentos corporativos são complementares, sem desempate automático. Inspecione também conflitos entre eles e entre recomendações e obrigações. Não transforme campos nulos ou texto de orientação em regra aprovada.
 
-Para cada regra registre ID, texto, escopo, classificação (`obrigatoria` ou `recomendacao`), conformidade, evidência, política de exceção e aprovador. Os templates não contêm regras fictícias. A matriz registra origem/revisão, aplicabilidade, requisito, componente/decisão, tarefa, teste, evidência e status. Use os sete estados do template de rastreabilidade. N/A exige justificativa; verificado exige evidência real ligada à revisão.
+Para cada regra aplicável registre ID e revisão, aplicabilidade, requisito, componente/decisão, tarefa, teste, evidência e status. Não reproduza a descrição completa se o ID e a versão apontarem inequivocamente para a baseline. Use os sete estados do template de rastreabilidade. N/A exige justificativa; verificado exige evidência real ligada à revisão.
 
 ## Conflitos e exceções
 
@@ -18,4 +20,4 @@ Exceção exige ID, regra/revisão, justificativa, escopo, aprovador autorizado,
 
 Projeto existente mantém sua base. Compare hashes/revisões atuais com os adotados e registre impacto antes de adotar. Não use atualização de hash para encobrir divergência. Registre decisão de adoção, responsável, evidência, data e revisões anterior/nova; reavalie só requisitos e aprovações afetados. Preserve a base anterior no histórico.
 
-Se a central falhar, use apenas cópia correspondente ao hash e à revisão previamente registrada; exponha que vigência central não foi confirmada. Sem arquivo completo/versionado não declare conformidade, mas produza rascunho. Não reclassifique cópia desatualizada como vigente.
+Se uma fonte externa configurada falhar, mantenha a revisão previamente adotada quando seu hash estiver acessível ou retorne explicitamente à baseline incorporada mediante decisão registrada. Sem arquivo completo/versionado não declare conformidade, mas produza rascunho. Não reclassifique cópia desatualizada como vigente.

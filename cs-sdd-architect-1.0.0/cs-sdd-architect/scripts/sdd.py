@@ -11,6 +11,8 @@ from pathlib import Path
 import yaml
 
 CORPORATE = ('empresa-processos.md', 'empresa-desenvolvimento.md')
+SKILL_ROOT = Path(__file__).resolve().parents[1]
+BUILTIN_CORPORATE_ROOT = SKILL_ROOT / 'assets' / 'templates'
 STATES = {'previsto', 'implementado_nao_verificado', 'verificado_conforme',
           'nao_conforme', 'nao_aplicavel', 'excecao_aprovada', 'pendente'}
 SECTIONS = ['Identificação e controle', 'Resumo executivo', 'Visão de produto',
@@ -133,12 +135,13 @@ def select(context):
 def load_rules(config_path, baseline=None):
     config_path = Path(config_path)
     cfg = read(config_path)
-    root = cfg.get('corporate_root')
-    root = (config_path.parent / root).resolve() if root else None
+    configured_root = cfg.get('corporate_root')
+    root = (config_path.parent / configured_root).resolve() if configured_root else BUILTIN_CORPORATE_ROOT
+    embedded = not configured_root
     report = {'sources': [], 'gaps': [], 'changes': [], 'conformity': 'nao_declarada'}
     adopted = {s['name']: s for s in (baseline or {}).get('sources', [])}
     for name in CORPORATE:
-        path = root / name if root else None
+        path = root / name
         fallback = False
         if path is None or not path.is_file():
             cache = cfg.get('corporate_cache')
@@ -162,7 +165,8 @@ def load_rules(config_path, baseline=None):
             if not body.strip():
                 report['gaps'].append(f'{name}: conteúdo ausente')
             entry = {'name': name, 'origin': meta.get('origin'), 'version': meta.get('version'),
-                     'sha256': digest, 'fallback': fallback, 'status': meta.get('status')}
+                     'sha256': digest, 'fallback': fallback, 'embedded': embedded and not fallback,
+                     'status': meta.get('status')}
             report['sources'].append(entry)
             if name in adopted and adopted[name]['sha256'] != digest:
                 report['changes'].append({'name': name, 'adopted': adopted[name], 'available': entry,

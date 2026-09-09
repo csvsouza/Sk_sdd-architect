@@ -6,6 +6,7 @@ Registre para cada verificação: executada (com comando/inspeção e resultado)
 - Especificação: escopo/exclusões, contratos, fluxos e erros têm aceites verificáveis; IDs estáveis e relações completas; sem requisito órfão.
 - Governança: duas origens/revisões, regras locais lidas/perguntadas, conflitos explícitos, exceções completas/válidas, snapshots identificados; padrões centrais não editados.
 - Engenharia: perfis correspondem à stack; recursos dependentes de versão confirmados; transações, autorização e recuperação têm responsáveis/limites.
+- CS APEX/PLSQL: guideline e hash registrados; identidade da página, `cod_telas`/`page_tree`, Scaffold/CS-Template, alçada, validação backend, componentes, owner/Parsing Schema, objetos, release e critérios negativos estão confirmados ou marcados como pendência; exemplos, capítulos depreciados e seções em construção não viraram obrigação por inferência.
 - Harness: tarefa possui contexto, dependências, limites, comandos confirmados, evidência e parada; dados externos não ampliam permissões.
 - IPC/aprovações: cálculo reproduzível, desconhecido zero, N/A justificado, bloqueios separados; aprovação autêntica vinculada à versão, preservada ou invalidada conforme impacto.
 - Economia: candidato condicional/evidenciado, limite de avaliação, diagnóstico antes de escalar; regras, testes e gates não removidos.
